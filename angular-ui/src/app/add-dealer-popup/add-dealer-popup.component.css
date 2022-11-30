@@ -1,0 +1,1646 @@
+.section {
+  margin-top: 50px;
+}
+
+
+.horizontal-scroll {
+  display: flex;
+  gap: 10px;
+  /* height: 450px; */
+  overflow-x: auto;
+  /* -ms-scroll-snap-type: x mandatory;
+      scroll-snap-type: x mandatory;
+  scrollbar-width: none; */
+}
+
+/* .horizontal-scroll::-webkit-scrollbar {
+  display: none;
+} */
+.horizontal-scroll__item {
+  /* border: 1px solid black; */
+  flex: 0 0 249px;
+  scroll-snap-align: start;
+}
+
+.grid-heading {
+  padding: 0 20px;
+}
+
+.geo-classification-crad {}
+
+.country {
+
+  font-family: 'Gilroy';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23.06px;
+  letter-spacing: 0em;
+  color: #000000;
+  font-style: light;
+}
+
+.State {
+  font-family: 'Gilroy';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23.06px;
+  font-style: light;
+  letter-spacing: 0em;
+  color: #000000;
+
+}
+
+.District {
+  font-family: 'Gilroy';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23.06px;
+  font-style: light;
+  letter-spacing: 0em;
+  color: #000000;
+
+}
+
+.City {
+  font-family: 'Gilroy';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23.06px;
+  font-style: light;
+  letter-spacing: 0em;
+  color: #000000;
+}
+
+.Regions {
+  font-family: 'Gilroy';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23.06px;
+  font-style: light;
+  letter-spacing: 0em;
+  color: #000000;
+}
+
+.Area {
+  font-family: 'Gilroy';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23.06px;
+  font-style: light;
+  letter-spacing: 0em;
+  color: #000000;
+}
+
+.Sub Area {
+  font-family: 'Gilroy';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23.06px;
+  font-style: light;
+  letter-spacing: 0em;
+  color: #000000;
+}
+
+mat-card {
+  background: #FFFFFF;
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  height: 400px;
+  height: 235px;
+}
+
+.font {
+  font-family: 'Gilroy';
+}
+
+.catg {
+  background: #EAEEFF;
+  border: 1px solid #00187A;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: #00187A;
+  padding: 5px;
+  text-align: center;
+}
+
+div.catg[data-selected] {
+  border: 2px solid #333;
+}
+
+.subc {
+  background: #E6FFF6;
+  border: 1px solid #0C5A3E;
+  border-radius: 10px;
+  color: #0C5A3E;
+  font-size: 14px;
+  margin-bottom: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.dist {
+  background: #FFEDEC;
+  border: 1px solid #C32F27;
+  border-radius: 10px;
+  color: #C32F27;
+  font-size: 14px;
+  margin-bottom: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.region {
+  background: #FFEDEC;
+  border: 1px solid #72411B;
+  border-radius: 10px;
+  color: #72411B;
+  font-size: 14px;
+  margin-bottom: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+.input-country-cls {
+  background: #FFFFFF;
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  margin-right: 10px;
+  font-size: 11px;
+  color: #000000;
+  padding: 8px 16px;
+  /* width: 160px;  */
+  margin-left: -12px;
+  width: 140px;
+  height: 43px;
+  /* font-weight: bold; */
+  font-weight: gray;
+}
+
+.input-district-cls {
+  background: #FFFFFF;
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  margin-right: 10px;
+  font-size: 11px;
+  padding: 8px 16px;
+  /* width: 150px; */
+  margin-left: -12px;
+  width: 140px;
+  height: 43px;
+  font-weight: gray;
+  color: #000000;
+}
+
+.input-region-cls {
+  background: #FFFFFF;
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  margin-right: 10px;
+  font-size: 11px;
+  padding: 8px 16px;
+  /* width: 150px; */
+  margin-left: -12px;
+  width: 140px;
+  height: 43px;
+  font-weight: gray;
+  color: #000000;
+}
+
+
+.input-countrycode-cls {
+  background: #FFFFFF;
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  margin-right: 10px;
+  font-size: 11px;
+  /* font-weight: bold; */
+  font-weight: gray;
+  color: #000000;
+  padding: 8px 16px;
+  width: 70px;
+  height: 43px;
+  margin-left: 16px;
+}
+
+.input-district-cls {
+  background: #FFFFFF;
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  margin-right: 10px;
+  font-size: 11px;
+  color: #000000;
+  padding: 8px 16px;
+  /* width: 160px;  */
+  margin-left: -12px;
+  width: 140px;
+  height: 43px;
+  /* font-weight: bold; */
+  font-weight: gray;
+}
+
+
+.addcode {
+  background: #000;
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgb(0 0 0 / 20%), -4px -4px 8px rgb(255 255 255 / 20%);
+  border-radius: 5px;
+  font-size: 11px;
+  color: rgba(104, 110, 116, 0.75);
+  color: #fff;
+  margin-left: 25px;
+  margin-top: 8px;
+  width: 40px;
+  height: 30px;
+}
+
+.span-subhead {
+  margin-bottom: 10px;
+  display: flex;
+  color: rgba(104, 110, 116, 0.75);
+  font-size: 13px;
+}
+
+.selected {
+  background-color: #00187A;
+  color: white;
+}
+
+.subselected {
+  background: #0C5A3E;
+  color: white;
+}
+
+.typeselected {
+  background: #C32F27;
+  color: white;
+}
+
+.cityselected {
+  background: #C32F27;
+  color: white;
+}
+
+.regionselected {
+  background: #3D1A00;
+  color: white;
+}
+
+.areaselected {
+  background: #3D1A00;
+  color: white;
+}
+
+.subAreaselected {
+  background: #3D1A00;
+  color: white;
+}
+
+/* .regions-column {
+    max-width: 24.5% !important;
+  } */
+
+/* .add-country-cls .col-8 {
+    max-width : 78% !important;
+  } */
+
+/* .add-country-cls .col-2 {
+    margin-left : -25px !important;
+  } */
+/* 
+  .add-country-cls .addcat {
+    width: 100% !important;
+  } */
+
+.printImg {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.geo-classification-crad .mat-card {
+  height: 380px !important;
+}
+
+.geo-classification-crad {
+  display: -webkit-box !important;
+  /* overflow-x: scroll; */
+  overflow-y: auto;
+  flex-wrap: nowrap !important;
+  /* height: 22em; */
+
+}
+
+.row-padding {
+  top: 30px;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+  width: 9px !important;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 20px;
+  background: #000000;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #000000;
+}
+
+::-webkit-scrollbar {
+  /* width: 1px; */
+  overflow-x: scroll;
+  height: 0.6em;
+  border-radius: 20px;
+  /* margin-top: -150px; */
+}
+
+.scroll {
+  /* overflow-y: scroll; */
+  overflow-y: auto;
+  /* margin-top: 150px; */
+}
+
+.delete-icon {
+  cursor: pointer;
+}
+
+
+
+
+.geography-item {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.geography-item.deactivated {
+  color: #a6a7ad !important;
+  opacity: .6;
+  border: 1px solid #a6a7ad !important;
+  cursor: auto;
+}
+
+/* .geography-item .title{
+  flex: 2;
+} */
+.action-items {
+  display: flex;
+  gap: 10px;
+}
+
+.action-items .action-item {
+  cursor: pointer;
+  display: none;
+  transition: .3s;
+}
+
+
+
+.geography-item:hover .action-items .action-item {
+  display: block;
+}
+
+.bread-crumb-display {
+  color: #686E74;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.bread-crumb-display span {
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+.addDelercols{
+box-sizing: border-box;
+width: 280px;
+height: 43px;
+left: 0px;
+top: 78px;
+font-family: 'Gilroy';
+background: #FFFFFF;
+border: 0.5px solid #000000;
+box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+border-radius: 10px;
+}
+
+.headefont{
+
+    width: 195px;
+    height: 38px;
+    left: 0px;
+    top: 0px;
+    
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    
+    color: #000000;
+}
+
+.fontcolor{
+  color: #000;
+  font-family: 'Gilroy';
+}
+.mat-form-field {
+    width: 680px;
+    font-family: 'Gilroy';
+    background-image: linear-gradient(90.06deg, #CED4DA 0.05%, #F8F9FA 96.47%) !important;
+  }
+  
+  .mat-form-field::placeholder {
+    bottom: 2px;
+  
+  }
+  
+  .category {
+    margin-top: 18px;
+    font-family: 'Gilroy';
+  }
+  
+  .materialname {
+    margin-top: 3px;
+    font-family: 'Gilroy';
+    margin-left: -4px;
+  }
+  
+  .additional {
+    margin-top: -10px;
+    font-family: 'Gilroy';
+    margin-left: -4px;
+  }
+  
+  .promotiont {
+    margin-top: 3px;
+    font-family: 'Gilroy';
+    margin-left: -2px;
+  }
+  
+  .image {
+    font-family: 'Gilroy';
+    margin-left: 2px;
+    position: relative;
+    top: -260px;
+    left: 415px;
+  
+  }
+  
+  .geography {
+    overflow-y: auto;
+    overflow-x: hidden;
+    max-height: 450px;
+  
+  }
+  
+  .navItems {
+    margin-left: 20px;
+  }
+  
+  .contentinline {
+    display: contents;
+  }
+  
+  .itemSize {
+    width: 517px;
+    height: 130px;
+    border: 0.5px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+  
+  .removeCircle {
+    margin-left: 99%;
+    margin-top: 37px;
+    color: red;
+  }
+  
+  .addBtnAlign {
+    margin-left: -93px;
+  }
+  
+  .alignInlineNav {
+    display: -webkit-inline-box;
+  }
+  
+  /* .items-headers{
+  
+  } */
+  
+  .listStyleOfItems {
+    list-style: none;
+    display: flex;
+    /* padding: 25px 0px 0px 0px; */
+  
+  }
+  
+  .listStyleOfItems li {
+    padding: 0 60px 0px 0px;
+  }
+  
+  
+  
+  /* .alignTop{
+    padding: 26px 0px 0px 0px;
+  } */
+  
+  .qtyOfItems {
+    width: 100px;
+    height: 43px;
+    background: #FFFFFF;
+    border: 0.5px solid #000000;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    /* margin: 26px 0px 5px 105px; */
+  }
+  
+  .topItems {
+    padding-top: 25px;
+  
+  }
+  
+  /* .inlineNav{
+    display: -webkit-inline-box;
+  } */
+  
+  
+  
+  .addAlign {
+    margin-left: 40px;
+  }
+  
+  .setInput {
+    margin: 9px 0px 0px 62px;
+  }
+  
+  .setndInput {
+    margin: 8px 0px 0px 0px;
+  }
+  
+  /* .qtyOfItems .firstInputOfItems {
+    width: 100px;   
+    height: 43px;
+    background: #FFFFFF;
+    border: 0.5px solid #000000;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    margin: 26px 0px 5px 105px;
+  
+  } */
+  
+  /* .qtyOfItems .secondInputOfItems{
+    width: 100px;   
+    height: 43px;
+    background: #FFFFFF;
+    border: 0.5px solid #000000;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+  } */
+  
+  /* .qtyOfItems .thirdInputOfItems{
+    width: 100px;   
+    height: 43px;
+    background: #FFFFFF;
+    border: 0.5px solid #000000;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    
+  } */
+  
+  
+  .allQty {
+    position: relative;
+    float: right;
+  }
+  
+  .qty {
+    width: 100px;
+    height: 43px;
+    /* background: #FFFFFF; */
+    /* border: 0.5px solid #000000;
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+      border-radius: 10px; */
+  }
+  
+  .productSize {
+    width: 949px;
+    height: 43px;
+    border: 0.5px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+  
+  /* ::ng-deep.steppers .prod.mat-horizontal-content-container {
+      width: 800px !important;
+    } */
+  .scroll {
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    /* background: #b3b3bc; */
+  }
+  
+  ::-webkit-scrollbar-track {
+    border-radius: 20px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 20px;
+  }
+  
+  .description {
+    font-family: 'Gilroy';
+    margin-top: 15px;
+  }
+  
+  .materialci {
+    font-family: 'Gilroy';
+    margin-top: -29px;
+    margin-left: 499px;
+  }
+  
+  .imageofm {
+    font-family: 'Gilroy';
+    margin-top: -31px;
+    margin-left: 314px;
+  }
+  
+  .expiryperiod {
+    font-family: 'Gilroy';
+    margin-top: 10px;
+    margin-left: 498px;
+  }
+  
+  .describem {
+    width: 250px;
+  
+  }
+  
+  .uom {
+    margin-top: 16px;
+    font-family: 'Gilroy';
+    margin-left: -5px;
+  }
+  
+  .sub-category {
+    margin-top: -28px;
+    margin-left: 255px;
+    font-family: 'Gilroy';
+  }
+  
+  .type {
+    margin-top: -30px;
+    margin-left: 496px;
+    font-family: 'Gilroy';
+  }
+  
+  .font {
+    font-family: 'Gilroy';
+  }
+  
+  .heading {
+    font-family: 'Gilroy';
+  }
+  
+  ::ng-deep.mat-stepper-vertical,
+  .mat-stepper-horizontal {
+    display: inline;
+    width: 500px;
+  }
+  
+  ::ng-deep.mat-stepper-label-position-bottom .mat-horizontal-stepper-header-container {
+    width: 767px;
+    margin-top: -51px;
+    
+  }
+  
+
+
+  .mat-horizontal-stepper-wrapper {
+    margin-top: -47px; 
+  
+  }
+  
+  /* .mat-horizontal-stepper-header-container ng-tns-c418-7 {
+      margin: top -51px;
+    }; */
+  /* ::ng-deep.input.mat-input-text {
+    margin-top: -9px;
+    margin-left: -6px;
+  } */
+  
+  /*old css*/
+  
+  .mat-form-field-flex {
+    padding-top: -10px;
+    display: inline-flex;
+    align-items: baseline;
+    box-sizing: border-box;
+    width: 100%;
+    height: 37px;
+  
+    /* background-color: #CED4DA; */
+  }
+  
+  .main {
+    background-image: linear-gradient(90.06deg, #CED4DA 0.05%, #F8F9FA 96.47%) !important;
+  
+  }
+  
+  .font {
+    font-family: 'Gilroy';
+  }
+  
+  .head-t h3 {
+    color: #000000;
+    text-align: center;
+    margin-top: -18px;
+    margin-bottom: 2px;
+  }
+  
+  .addU {
+    position: relative;
+    /* font-family: 'Gilroy-Bold';  */
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  .addU:after {
+    content: "";
+    display: block;
+    width: 380px;
+    height: 2px;
+    background: #686E74;
+    right: 0;
+    top: 50%;
+    position: absolute;
+  }
+  
+  .addU:before {
+    content: "";
+    display: block;
+    width: 380px;
+    height: 2px;
+    background: #686E74;
+    left: 0;
+    top: 50%;
+    position: absolute;
+  }
+  
+  .addUserForm input {
+    border-radius: 5px;
+    border: linear-gradient(90.06deg, #CED4DA 0.05%, #F8F9FA 96.47%) !important;
+    padding: 5px 5px;
+    width: 250px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  span {
+    color: red;
+  }
+  
+  .close-icon {
+    left: 100%;
+    position: relative;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  label {
+    /* padding: 2px 0; */
+    font-size: 12px;
+    margin: 5px;
+    font-family: 'Gilroy';
+  }
+  
+  mat-form-field {
+    width: 246px;
+  
+  }
+  
+  ::ng-deep.mat-form-field-appearance-outline .mat-form-field-infix {
+    padding: 0em 0 0.7em 0;
+    border: linear-gradient(90.06deg, #CED4DA 0.05%, #F8F9FA 96.47%) !important;
+  }
+  
+  ::ng-deep.mat-dialog-container {
+    background: linear-gradient(90.06deg, #CED4DA 0.05%, #F8F9FA 96.47%) !important;
+    ;
+  }
+  
+  .categorydrp {
+    width: 205px;
+  }
+  
+  .subcategorydrp {
+    width: 205px;
+    margin-left: 250px;
+    margin-top: -40px;
+  }
+  
+  .typedrp {
+    width: 205px;
+    margin-left: 499px;
+    margin-top: -42px;
+  }
+  
+  .customidentifier {
+    width: 205px;
+    margin-left: 499px;
+    margin-top: -145px;
+  }
+  
+  .uomp {
+    margin-left: 499px;
+    margin-top: -29px;
+  }
+  
+  .promotiontypedrp {
+    width: 390px;
+    margin-top: 2px;
+    color: lightgrey;
+    font-family: 'Gilroy';
+  }
+  
+  .brandname {
+    margin-top: 1px;
+    margin-left: -5px;
+    font-family: 'Gilroy';
+  }
+  
+  .globalcode {
+    margin-top: -35px;
+    margin-left: 388px;
+    font-family: 'Gilroy';
+  }
+  
+  .brandpl {
+    margin-top: 10px;
+  }
+  
+  .sku {
+    margin-top: 10px;
+    margin-left: -5px;
+    font-family: 'Gilroy';
+  }
+  
+  .shortcode {
+    margin-top: -35px;
+    margin-left: 388px;
+    font-family: 'Gilroy';
+  }
+  
+  .productg {
+    margin-top: 10px;
+    margin-left: -5px;
+    font-family: 'Gilroy';
+  }
+  
+  .manualsort {
+    margin-top: -35px;
+    margin-left: 388px;
+    font-family: 'Gilroy';
+  }
+  
+  .productdrp {
+    width: 309px;
+    margin-top: 8px;
+    margin-left: -2px;
+  }
+  
+  .productsg {
+    margin-top: 10px;
+    margin-left: -5px;
+    font-family: 'Gilroy';
+  }
+  
+  .productlink {
+    margin-top: -35px;
+    margin-left: 388px;
+    font-family: 'Gilroy';
+  }
+  
+  .productsdrp {
+    width: 309px;
+    margin-top: 8px;
+    margin-left: -2px;
+  }
+  
+  .productci {
+    margin-top: 10px;
+    margin-left: -5px;
+    font-family: 'Gilroy';
+  }
+  
+  .identiersdrp {
+    width: 735px;
+    margin-top: 8px;
+    margin-left: -2px;
+  
+  }
+  
+  
+  .mat-slide {
+    margin-left: 620px;
+    color: black;
+    font-family: 'Gilroy';
+    margin-top: -1px;
+  }
+  
+  
+
+  
+
+  .catg {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: #009B63;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+    background: #fff;
+    border: 1px solid #009B63;
+    border-radius: 10px;
+  }
+  
+  div.catg[data-selected] {
+    border: 2px solid #333;
+  }
+  
+  .subc {
+    border: 1px solid #0C5A3E;
+    border-radius: 10px;
+    color: #0C5A3E;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .typeg {
+    color:#009B63;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+    border: 1px solid #009B63;
+    border-radius: 10px;
+  }
+  
+  .city {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+    background: #000000;
+    border: 1px solid #000000;
+    border-radius: 10px;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  .addcat {
+    background: #FFFFFF;
+    border: 0.5px solid #000000;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 13px;
+    color: rgba(104, 110, 116, 0.75);
+    padding: 8px 16px;
+    /* width: 150px; */
+    margin-left: -12px;
+  }
+  
+  .addcode {
+    background: #FFFFFF;
+    border: 0.5px solid #000000;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    font-size: 13px;
+    color: rgba(104, 110, 116, 0.75);
+    padding: 8px 20px;
+  }
+  
+  .span-subhead {
+    margin-bottom: 10px;
+    display: flex;
+    color: rgba(104, 110, 116, 0.75);
+    font-size: 13px;
+  }
+  
+  .selected {
+    background-color: #DBB802;
+    color: white;
+  }
+  
+  .subselected {
+    background: #DBB802;
+    color: white;
+  }
+
+  .regionselected {
+    background: #DBB802;
+    color: #fff;
+    border: 1px solid #DBB802;
+  }
+  
+  .typeselected {
+    background: #fff;
+    color: #000;
+  }
+  
+  /* .row {
+      width: 767px
+    } */
+  
+  .bar {
+    height: 400px;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    /* height: 500px; */
+  }
+  
+  .geo {
+    margin-top: 18px;
+    font-family: 'Gilroy';
+  }
+  
+  .minorder {
+    margin-top: -29px;
+    margin-left: 310px;
+    font-family: 'Gilroy';
+  }
+  
+  .mrp {
+    position: relative;
+    left: 27%;
+    font-family: 'Gilroy';
+  }
+  
+  .max {
+    margin-top: -29px;
+    margin-left: 409px;
+    font-family: 'Gilroy';
+  }
+  
+  .discount {
+    margin-top: -29px;
+    margin-left: 608px;
+    font-family: 'Gilroy';
+  }
+  
+  .margin {
+    margin-top: -29px;
+    margin-left: 512px;
+    font-family: 'Gilroy';
+  }
+  
+  .leadt {
+    position: relative;
+    left: 90%;
+    top: -32px;
+    font-family: 'Gilroy';
+  }
+  
+  .registration {
+    top: -64px;
+    left: 105%;
+    position: relative;
+    font-family: 'Gilroy';
+  }
+  
+  .tags {
+    position: relative;
+    left: 125%;
+    top: -93px;
+    font-family: 'Gilroy';
+  }
+  
+  .Kedah {
+    margin-top: 24px;
+    margin-left: 4px;
+  }
+  
+  .mala {
+    margin-top: -111px;
+    margin-left: 4px;
+  }
+  
+  .Perak {
+    margin-top: 18px;
+    margin-left: 4px;
+  }
+  
+  .Penang {
+    margin-top: 17px;
+    margin-left: 4px;
+  }
+  
+  .North {
+    margin-top: 17px;
+    margin-left: 4px;
+  }
+  
+  /* .geoo{
+      width: 900px;
+    } */
+  .addlink {
+    margin-top: -21px;
+    margin-left: 987px;
+  
+  }
+  
+  .numberl {
+    margin-top: -21px;
+    margin-left: 799px;
+  }
+  
+  .headergeo {
+    position: relative;
+    left: -7%;
+    top: -29px;
+  }
+  
+  .malainput {
+    position: relative;
+    left: -7%;
+  }
+  
+  .kedahinput {
+    position: relative;
+    left: -7%;
+  }
+  
+  .perakinput {
+    position: relative;
+    left: -7%;
+  }
+  
+  .penanginput {
+    position: relative;
+    left: -7%;
+  }
+  
+  .northinput {
+    position: relative;
+    left: -7%;
+  }
+  
+  .infosize {
+    width: 300px !important;
+  }
+  
+  ::ng-deep.mat-horizontal-content-container {
+    overflow: hidden;
+    padding: 0px 0px 0px 0px;
+  }
+  
+  .submitbtn {
+    margin-top: 12px;
+  }
+  
+  ::ng-deep.mat-step-text-label {
+    /* text-overflow: ellipsis;
+    overflow: hidden; */
+    font-size: 12px;
+    font-family: 'Gilroy';
+    bottom: 68px;
+    position: absolute;
+    left: 3px;
+  }
+  
+  ::ng-deep.mat-step-label{
+    min-width: 73px;
+  }
+
+  ::ng-deep.datepicker .mat-form-field-appearance-fill .mat-form-field-flex {
+    /* padding: .75em .75em 0 .75em; */
+    border-radius: 14px;
+    width: 393px;
+    height: 42px;
+  
+  }
+  
+  .datepicker.mat-form-field-infix {
+    display: block;
+    position: relative;
+    flex: auto;
+    min-width: 0;
+    width: 180px;
+    background-color: white;
+    font-family: "Gilroy";
+  }
+  
+  
+  
+  .alignment {
+    position: relative;
+    left: 209px;
+  }
+  
+  .btn-row {
+    margin-top: -2px;
+  }
+  
+  .material-card {
+    margin-top: -8px;
+  }
+  
+  .getgrp {
+    position: relative;
+    left: 414px;
+   bottom: 83px;
+  }
+  
+  .productlevel {
+    position: relative;
+    font-family: 'Gilroy';
+    bottom: 95px;
+  }
+  
+  .items {
+    position: relative;
+    font-family: 'Gilroy';
+    bottom: 153px;
+  }
+  
+  .itemstwo {
+    position: relative;
+    font-family: 'Gilroy';
+    bottom: 500px;
+    left: 408px;
+  }
+  
+  .qty {
+    position: relative;
+    font-family: 'Gilroy';
+    bottom: 328px;
+    left: 293px;
+  }
+  
+  .qtytwo {
+    position: relative;
+    font-family: 'Gilroy';
+    bottom: 678px;
+    left: 708px;
+  }
+  
+  .moq {
+    position: relative;
+    font-family: 'Gilroy';
+    bottom: 337px;
+    left: 293px;
+  }
+  
+  .productleveltwo {
+    position: relative;
+    font-family: 'Gilroy';
+    bottom: 166px;
+    left: 406px;
+  }
+  
+  .arrow .multiselect-dropdown .dropdown-btn .dropdown-multiselect__caret {
+    overflow: hidden;
+    display: none;
+    /* background-image: url('../../../../assets/img/maximize.png');    */
+    background-size: 13px;
+    background-repeat: no-repeat;
+    height: 300px;
+    margin-top: 12px;
+    margin-right: -10px;
+  }
+  
+  .productdrpdown {
+    width: 365px;
+    position: relative;
+    bottom: 89px;
+  }
+  
+  .productdrpdowntwo {
+    width: 365px;
+    position: relative;
+    bottom: 160px;
+    left: 414px;
+  }
+  
+  .buyg {
+    bottom: 554px;
+    position: relative;
+  }
+  
+  .getg {
+    position: relative;
+    bottom: 627px;
+    left: 424px;
+  }
+  
+  .productlevelthree {
+    position: relative;
+    font-family: 'Gilroy';
+    bottom: 656px;
+  }
+  
+  .productlevelf {
+    position: relative;
+    font-family: 'Gilroy';
+    bottom: 724px;
+    left: 422px;
+  }
+  
+  .productdrpdownthree {
+    width: 365px;
+    position: relative;
+    bottom: 650px;
+    left: 1px;
+  }
+  
+  .productdrpdownf {
+    width: 365px;
+    position: relative;
+    bottom: 719px;
+    left: 414px;
+  }
+  
+  .itemso {
+    position: relative;
+    font-family: 'Gilroy';
+    bottom: 716px;
+  }
+  
+  .qty-three {
+    position: relative;
+    font-family: 'Gilroy';
+    bottom: 882px;
+    left: 298px;
+  }
+  
+  .moq-three {
+    position: relative;
+    font-family: 'Gilroy';
+    bottom: 878px;
+    left: 293px;
+  }
+  
+  .itemst {
+    position: relative;
+    font-family: 'Gilroy';
+    bottom: 1061px;
+    left: 425px;
+  }
+  
+  .qtyf {
+    position: relative;
+    font-family: 'Gilroy';
+    bottom: 1231px;
+    left: 718px;
+  }
+  
+  .moqf {
+    position: relative;
+    font-family: 'Gilroy';
+    bottom: 878px;
+    left: 293px;
+  }
+  
+  .buygrp-hide {
+    overflow-y: auto;
+    overflow-x: auto;
+  }
+  
+  /* .fill .mat-form-field{
+    
+    position: relative;
+  } */
+  .mydatepicker {
+    border-radius: 2px;
+    font-family: 'Gilroy';
+  }
+  
+  ::ng-deep.mydatepicker .mat-form-field {
+    width: 386px;
+   
+    height: 47px;
+    background: white !important;
+    border-radius: 5px;
+    padding-left: 10px;
+   
+  }
+  .imagefield{
+    position: relative;
+    top:34px;
+  }
+  ::ng-deep.mydatepicker .mat-icon-button {
+    background: transparent;
+    color: black;
+    position: relative;
+      right: 8px;
+  }
+  .seconditems{
+  position: relative;
+  bottom: 10px;
+  left: 4px;
+  }
+  .showdatascroll{
+    overflow-x: auto;
+  }
+
+  .save-btn {
+    width: 168px;
+    height: 43px;
+    font-family: 'Gilroy';
+    font-size: 15px;
+    line-height: 18px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    background: #000000;
+    box-shadow: -4px -4px 8px rgba(255, 255, 255, 0.2), 4px 4px 8px rgba(0, 0, 0, 0.2), inset -2px -2px 4px rgba(0, 0, 0, 0.2), inset 2px 2px 4px rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    border-color: black;
+  }
+
+  .cancel-btn {
+    width: 168px;
+    height: 43px;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    box-shadow: -4px -4px 8px rgba(255, 255, 255, 0.2), 4px 4px 8px rgba(0, 0, 0, 0.2), inset -2px -2px 4px rgba(0, 0, 0, 0.2), inset 2px 2px 4px rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    color:#000000;
+    font-family: 'Gilroy';
+  }
+
+  .add-dealer-scroll {
+    /* height:470px; */
+    overflow-x: hidden;
+  }
+
+  .addtype {
+    width:70px !important;
+  }
+
+  .addname {
+    width:135px !important;
+  }
+
+  .addtax {
+    width:70px !important;
+  }
+
+  .addadress {
+    width:135px !important;
+    height:22px;
+  }
+
+  .addcountry {
+    width:70px !important;
+  }
+
+  .aastate {
+    width:70px !important;
+  }
+
+  .addcity {
+    width:135px !important;
+    height:22px;
+  }
+
+  .addphone {
+    width:70px !important;
+  }
+
+  .remove-address{
+    position:relative;
+    top:25px;
+    /* color: red; */
+    cursor: pointer;
+  }
+  .remove-addresss{
+    position:relative;
+    top:25px;
+    color: red;
+    cursor: pointer;
+  }
+  .addMore-icon {
+    cursor: pointer;
+    /* cursor: not-allowed;
+    pointer-events: none !important; */
+  }
+  
+  .addMore-icons {
+    cursor: pointer;
+    color: grey;
+    /* cursor: not-allowed;
+    pointer-events: none !important; */
+  }
+  .status-class {
+    box-sizing: border-box;
+    width: 280px;
+    height: 43px;
+    background: #FFFFFF;
+    border: 0.5px solid #000000;
+    box-shadow: 4px 4px 8px rgb(0 0 0 / 20%), -4px -4px 8px rgb(255 255 255 / 20%);
+    border-radius: 10px;
+    color: grey;
+  }
+
+  .font{
+    font-family: 'Gilroy';
+  }
+
+  .Geo-headerlabel {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+  }
+
+  .sub-label {
+    font-family: 'Gilroy';
+    font-size: 12.5px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+  }
+
+  .card-cls {
+    height: 165px;
+    overflow-y: scroll;
+  }
+
+  .row-space {
+    margin-top:20px;
+  }
+
+  .addzip,
+  .addadressLine1 {
+    width:135px !important;
+    margin-top:4px;
+    height:22px;
+  }
+  .backenendcolor{
+    background-color: #000;
+  }
+
+ 

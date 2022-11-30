@@ -1,0 +1,87 @@
+<div class="bg-img">
+  <div class="logo">
+  <img   src="assets/Logo.svg" alt="">
+  </div>
+  <section class="vh-100">
+    
+    <div class="container">
+  
+      <div class="loginform-page" *ngIf="!redirectSuccessMessage">
+        <div class="signIn-page d-flex justify-content-center align-items-center h-100">
+          
+          <div class="login-form "> 
+            <form>
+            <div class="login-head">
+              <h6 class="sign-head" >Reset Password</h6>
+            </div>
+
+            <div class="form-outline ">
+              <label class="form-label" for="form3Example3">Latest password*</label>
+              <br>            
+              <input type="password"  style="border-radius:10px" id="password" placeholder="Enter your password (at least 8 ch)" name="password"
+              [type]="showPassword ? 'text': 'password'" [(ngModel)]="enterfirst" required>
+              
+            <mat-icon matSuffix (click)="PasswordVisibilityLatest()">
+              {{showPassword?'visibility':'visibility_off'}}
+            </mat-icon>
+            </div>
+
+            <div class="form-outline">
+              <label class="form-label" for="form3Example3">Re-enter password*</label>
+              <br>
+              <input type="text"  style="border-radius:10px" placeholder="Re-enter your new password (at least 8 ch)"
+              [type]="showre_Password ? 'text': 'password'"  [(ngModel)]="entersecond">
+              
+              <mat-icon matSuffix (click)="PasswordVisibilityreenter()">
+                  {{showre_Password?'visibility':'visibility_off'}}
+                </mat-icon>
+                <p class="errorMessage">{{error}}</p>
+            
+            </div>
+
+            <div class="text-center text-lg-start mt-2">
+              <button type="button" class="btn btn-primary btn-block login-btn" style="width: 361px;"
+               (click)="UpdatePassword()" >Update Password</button>
+              <!-- <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a  routerLink="/ResetPassword"
+                  class="link-danger">Register</a></p> -->
+            </div>
+
+            </form>
+          </div>
+
+        </div>
+
+  
+      </div>
+
+      <!-- redirect to success message -->
+      <div class="redirectMessage" *ngIf="redirectSuccessMessage">
+        <div class="signIn-page d-flex justify-content-center align-items-center h-100">
+          
+          <div class="login-form_changed "> 
+            <div class="login-head">
+              <h6 class="sign-head" >Password changed</h6>
+            </div>
+            <br>
+            <p class="Message">Your password has been successfully changed.<br>Please, sign in again!</p>
+            <br>
+            <div class="text-center text-lg-start mt-2">
+              <button type="button" class="btn btn-primary btn-block login-btn" style="width: 361px;"
+               (click)="redirect_To_Sign()" >sign in</button>
+              <!-- <p class="small fw-bold mt-2 pt-1 mb-0">Don't have an account? <a  routerLink="/ResetPassword"
+                  class="link-danger">Register</a></p> -->
+            </div>
+          </div>
+
+        </div>
+
+  
+      </div>
+
+    </div>
+  </section>
+  <div class="highlitepopup">
+    <img   src="assets/dealersnotpopup.svg" alt="">
+  </div>
+  
+  </div>

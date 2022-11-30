@@ -1,0 +1,163 @@
+
+  <div class="font ">
+    <div class=" main" width="400%">
+    <div class="container" >
+          <div class="addUser">
+                <mat-icon mat-button class="close-icon" [mat-dialog-close]="true" style="color: #686E74;width: 12px;height: 12px;font-weight: 20px;">close</mat-icon>
+                <br>
+        <div class="head-t">
+          <h3 class="addU font">Add User</h3>
+        </div>
+         <p style="color: red; text-align: center;">{{errorMsg}}</p>
+        <div>
+          <br>
+          <h6 style="color: #000000
+   ;font-size:20px; font-weight: lighter;"><b>Basic Information</b></h6>
+  
+        </div>
+        <div class="addUserForm">
+          <form #loginForm="ngForm">
+            <div class="row">
+    <div class="col">
+      <label>Username<span>*</span></label>
+      <br>
+      <input type="text" id="uname" name="uname" required placeholder="Enter your username" [(ngModel)]="username" #uname="ngModel" style="width: 100%;">
+      <p style="margin-bottom:-22px; padding: 0px;" *ngIf="uname.invalid && (uname.dirty || uname.touched)"
+      class="alert">
+  
+    <span style="color:red;position: relative;" *ngIf="uname.errors?.['required']">
+      *User Name is required
+      
+  
+    </span>
+    
+       <!-- <span *ngIf="uname.invalid && (uname.dirty || uname.touched) && uname.errors?.['required']"
+    class="alert" style="color:red;position: relative;left: -4%;margin-bottom:-40px;">
+      *Username is required.
+    </span> -->
+  </p>
+    </div>
+            </div>
+            <br>
+            <div class="row">
+
+              <div class="col">
+                <label>First Name<span>*</span></label>
+                <br>
+                <input type="text" id="fname" name="fname" required appForbiddenName="bob" placeholder="Enter your first name" [(ngModel)]="fullname" #fname="ngModel">
+                <p style="margin-bottom:-22px;padding: 0px;" *ngIf="fname.invalid && (fname.dirty || fname.touched)"
+                class="alert">
+               
+              
+              <span style="color:red;position: relative;" *ngIf="fname.errors?.['required']">
+                *First Name is required
+              </span>
+            
+            </p>
+            <!-- <p style="color: red; text-align: center;">{{errorMsg}}</p>  -->
+              </div>
+              <div class="col">
+                <label>Last Name<span>*</span></label>
+                <br>
+                <input type="text" id="lname" name="lname" required  appForbiddenName="bob" #lname="ngModel" placeholder="Enter your last name" [(ngModel)]="Lastname">
+                <p style="margin-bottom:-22px;padding: 0px;" *ngIf="lname.invalid && (lname.dirty || lname.touched)"
+                class="alert">
+            
+              <span style="color:red;position: relative;" *ngIf="lname.errors?.['required']">
+                *Last Name is required
+              </span>
+            </p>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col">
+                <label>Email <span>*</span></label>
+                <br>
+                <input type="email"id="emails" name="emails" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$" #emails="ngModel" placeholder="Enter your email Id" [(ngModel)]="email">
+                <p style="margin-bottom:-22px;padding: 0px;" *ngIf="emails.invalid && (emails.dirty || emails.touched)"
+                class="alert">
+            
+              <span style="color:red;position: relative;" *ngIf="emails.errors?.['required']">
+                *Email is required
+              </span>
+              <span style="color:red;position: relative;" *ngIf="emails.errors&&emails.errors?.['pattern']">
+                *Email is Invalid
+              </span>
+            </p>
+              </div>
+              <div class="col">
+
+                <label>Phone No<span>*</span></label>
+                <br>
+                <input type="text"id="mobile" name="mobile" required placeholder="Enter your phone no" pattern="^((\\+91-?)|0)?[0-9]{10}$" [(ngModel)]="phone"#mobile="ngModel">
+                <p  style="margin-bottom:-22px;padding: 0px;" *ngIf="mobile.invalid && (mobile.dirty || mobile.touched)"
+                class="alert">
+              <span style="color:red;position: relative;" *ngIf="mobile.errors?.['required']">
+                *Phone Number is required
+              </span>
+              <span style="color:red;position: relative;" *ngIf="mobile.errors&&mobile.errors?.['pattern']">
+                *Phone Number is Invalid
+              </span>
+            </p>
+  
+              </div>
+            </div>
+
+           
+            <br>
+              
+            <br>
+            <h6 style="color: #000000
+   ;font-size:20px; font-weight: lighter;"><b>Role Selection</b></h6>
+            <div class="row">
+              <div class="col">
+                <label class="role1">Role<span>*</span></label>
+                <select  #teams class="form-select form-select-lg mb-8 " (change)="selectedValue(teams.value);" placeholder="Select your Role" aria-label=".form-select-lg example" style="height: 35px;border-radius: 10px;width: 100%;height: 43px;">
+                  <option value=""  selected hidden>Select your role</option>
+
+                  <option style="height: 900px;"     *ngFor="let topping of toppingList" [value]="topping.roleId">{{topping.roleName}}</option>
+
+                </select>
+
+                <!-- <select class="form-select" aria-label="Default select example">
+                  <option *ngFor="let topping of toppingList" [value]="topping.roleId" (selectionChange)="selectedValue($event.value);">{{topping.roleName}}</option>
+             
+                </select> -->
+                
+
+<!-- 
+                  <label>Role</label><span>*</span>
+                <br>
+                         <mat-form-field appearance="outline" style="width: 525px;">
+                <mat-select required [formControl]="toppings"[(ngModel)]="role" style ="font-family: 'Gilroy'" placeholder="Select your role" (selectionChange)="selectedValue($event.value);">
+
+                  <mat-option *ngFor="let topping of toppingList" [value]="topping.roleId" >
+                    {{topping.roleName}}</mat-option>
+                </mat-select>
+              </mat-form-field> -->
+            </div>
+            </div>
+
+            
+            <!-- <mat-form-field>
+          <mat-label>Role</mat-label>
+          <mat-select [formControl]="role">
+            <mat-option *ngFor="let user of userType" [value]="role">{{user}}</mat-option>
+          </mat-select>
+        </mat-form-field> -->
+
+
+          </form>
+          <br>
+   <diV class="row">
+     <div class="col d-flex justify-content-center">
+      <button [disabled]="loginForm.form.invalid" class="btn btn-primary btn-block justify-center" style="background-color:#000000;width:66%;" (click)="addUSer()" >Add user</button>
+     </div>
+   </diV>
+          <span style="margin-left:17%;position: relative;top: 10px;">Required fields*</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

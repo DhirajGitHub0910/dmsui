@@ -1,0 +1,1209 @@
+
+  .mat-form-field-label-wrapper {
+    left: 10px;
+  }
+
+.mat-form-field::placeholder {
+  bottom: 2px;
+}
+
+.category {
+  margin-top: 18px;
+  font-family: 'Gilroy';
+}
+
+.materialname {
+   font-family: 'Gilroy';
+  position: relative;
+  top: 8px;
+  }
+.material-card {
+  display: -webkit-box !important;
+    overflow-y: auto;
+    flex-wrap: nowrap !important;
+}
+.geography {
+  overflow-y: auto;
+  overflow-x: hidden;
+  /* max-height: 450px; */
+
+}
+/* .addMetrial{
+  height: 450px;
+  overflow-y: auto;
+} */
+.scroll {
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 25px;
+ }
+
+::-webkit-scrollbar-track {
+  border-radius: 20px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  margin-left: 20px;
+}
+form[name="myBasicInfo"]{
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 450px;
+}
+
+.description {
+  font-family: 'Gilroy';
+  /* margin-top: 21px; */
+}
+
+.materialci {
+  font-family: 'Gilroy';
+  
+}
+
+.imageofm {
+  font-family: 'Gilroy';
+  position: relative;
+  left: 53%;
+}
+.expiryperiod {
+  font-family: 'Gilroy';
+}
+
+.describem {
+  width: 250px;
+
+}
+
+.uom {
+  margin-top: 16px;
+  font-family: 'Gilroy';
+  margin-left: -5px;
+}
+
+.sub-category {
+  margin-top: -28px;
+  margin-left: 255px;
+  font-family: 'Gilroy';
+}
+
+.type {
+  font-family: 'Gilroy';
+}
+
+.font {
+  font-family: 'Gilroy';
+}
+
+.heading {
+  margin-top: 8px;
+  font-family: 'Gilroy';
+}
+
+::ng-deep.mat-stepper-vertical,
+.mat-stepper-horizontal {
+  display: inline;
+  width: 500px;
+}
+
+::ng-deep.mat-stepper-label-position-bottom .mat-horizontal-stepper-header-container {
+  width: 649px;
+  margin-top: -51px;
+}
+
+.mat-horizontal-stepper-wrapper {
+  margin-top: -47px;
+
+}
+::ng-deep.input.mat-input-text {
+  margin-top: -9px;
+  margin-left: -6px;
+}
+
+/*old css*/
+
+.mat-form-field-flex {
+  padding-top: -10px;
+  display: inline-flex;
+  align-items: baseline;
+  box-sizing: border-box;
+  width: 100%;
+  height: 37px;
+}
+
+.main {
+  background-image: linear-gradient(90.06deg, #CED4DA 0.05%, #F8F9FA 96.47%) !important;
+
+}
+
+.font {
+  font-family: 'Gilroy';
+}
+
+.head-t h3 {
+  color: #000000;
+  text-align: center;
+  margin-top: -18px;
+  margin-bottom: 2px;
+}
+
+.selected {
+  background-color: #DBB802;
+  color: white;
+}
+
+.subselected {
+  background: #DBB802;
+  color: white;
+}
+
+.typeselected {
+  background: #DBB802;
+  color: white;
+}
+
+.cityselected {
+  background: #000000;
+  color: white;
+}
+.addU {
+  position: relative;
+   font-weight: bold;
+  font-size: 20px;
+}
+.dropdown-btn span span {
+  position: absolute !important;
+  display: none !important;
+}
+.addU:after {
+  content: "";
+  display: block;
+  width: 280px;
+  height: 2px;
+  background: #686E74;
+  right: 0;
+  top: 50%;
+  position: absolute;
+}
+
+.addU:before {
+  content: "";
+  display: block;
+  width: 280px;
+  height: 2px;
+  background: #686E74;
+  left: 0;
+  top: 50%;
+  position: absolute;
+}
+
+.addUserForm input {
+  border-radius: 5px;
+  border: linear-gradient(90.06deg, #CED4DA 0.05%, #F8F9FA 96.47%) !important;
+  padding: 5px 5px;
+  width: 250px;
+  font-size: 14px;
+  outline: none;
+}
+
+span {
+  color: red;
+}
+
+.close-icon {
+  left: 100%;
+  position: relative;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+label {
+   font-size: 14px;
+  margin: 5px;
+}
+
+.mat-align {
+  position: relative;
+  bottom: 15px;
+}
+
+
+.uomp {
+  /* margin-left: 499px;
+  margin-top: -29px; */
+  margin-top: 10px;
+}
+.brandname {
+  /* margin-top: 1px;
+  margin-left: -5px; */
+  font-family: 'Gilroy';
+}
+
+.globalcode {
+  /* margin-top: -35px;
+  margin-left: 388px; */
+  font-family: 'Gilroy';
+}
+
+.brandpl {
+  margin-top: 10px;
+}
+
+.sku {
+ 
+  font-family: 'Gilroy';
+}
+
+.shortcode {
+ 
+  font-family: 'Gilroy';
+}
+
+.productg {
+ 
+  font-family: 'Gilroy';
+}
+
+.manualsort {
+ 
+  font-family: 'Gilroy';
+}
+
+.productdrp ng-select{
+  margin: 0px 40px 0 0;
+}
+
+::ng-deep.arrow-hide .multiselect-dropdown .dropdown-btn .dropdown-multiselect__caret {
+  display: none;
+}
+
+.productsg {
+  font-family: 'Gilroy';
+}
+
+.productlink {
+  font-family: 'Gilroy';
+}
+
+.productsdrp ng-select{
+  margin: 0px 40px 0 0;
+}
+
+.productci {
+  margin-top: 10px;
+  margin-left: -5px;
+  font-family: 'Gilroy';
+}
+
+
+/* ::ng-deep.hide .multiselect-dropdown .dropdown-btn .dropdown-multiselect__caret {
+   overflow: hidden;
+   background-image: url('../../../../assets/img/maximize.png');
+  background-size: 13px;
+  background-repeat: no-repeat;
+  height: 300px;
+  margin-top: 12px;
+  margin-right: -10px;
+} */
+
+.mat-slide {
+      color: black;
+      font-family: 'Gilroy';
+      text-align: right;
+}
+
+::ng-deep.mat-slide .mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+  background-color: white;
+  border: 2px solid;
+}
+
+::ng-deep.mat-slide .mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+  background-color: #212529;
+}
+
+.city {
+  margin-left: 608px;
+  margin-top: -30px;
+}
+
+.state {
+  margin-left: 228px;
+  margin-top: -29px;
+}
+
+.region {
+  margin-left: 425px;
+  margin-top: -29px;
+}
+
+mat-card {
+  background: #FFFFFF;
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+  border-radius: 25px;
+  height: 212px;
+  width: 15rem;
+}
+
+.catg {
+  background: #EAEEFF;
+  border: 1px solid #00187A;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  color: #00187A;
+  padding: 5px;
+  text-align: center;
+}
+
+div.catg[data-selected] {
+  border: 2px solid #333;
+}
+
+.subc {
+  background: #E6FFF6;
+  border: 1px solid #0C5A3E;
+  border-radius: 10px;
+  color: #0C5A3E;
+  font-size: 14px;
+  margin-bottom: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+.typeg {
+  background: #FFEDEC;
+  border: 1px solid #C32F27;
+  border-radius: 10px;
+  color: #C32F27;
+  font-size: 14px;
+  margin-bottom: 10px;
+  padding: 5px;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}
+
+.addcat {
+  background: #FFFFFF;
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  margin-right: 10px;
+  font-size: 13px;
+  color: rgba(104, 110, 116, 0.75);
+  padding: 8px 16px;
+   margin-left: -12px;
+}
+
+.addcode {
+  background: #FFFFFF;
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  font-size: 13px;
+  color: rgba(104, 110, 116, 0.75);
+  padding: 8px 20px;
+}
+
+.span-subhead {
+  margin-bottom: 10px;
+  display: flex;
+  color: rgba(104, 110, 116, 0.75);
+  font-size: 13px;
+}
+
+.bar {
+  height: 400px;
+  overflow-y: scroll;
+  overflow-x: auto;
+ 
+}
+
+.geo {
+  margin-top: 18px;
+  font-family: 'Gilroy';
+}
+
+.placeholder-border {
+  border: 1px solid !important;
+  border-radius: 8px;
+}
+
+.minorder {
+  margin-top: -29px;
+  margin-left: 310px;
+  font-family: 'Gilroy';
+}
+
+.mrp {
+  position: relative;
+  left: 27%;
+  font-family: 'Gilroy';
+}
+
+.max {
+  margin-top: -29px;
+  margin-left: 409px;
+  font-family: 'Gilroy';
+}
+
+.discount {
+  margin-top: -29px;
+  margin-left: 608px;
+  font-family: 'Gilroy';
+}
+
+.margin {
+  margin-top: -29px;
+  margin-left: 512px;
+  font-family: 'Gilroy';
+}
+
+.leadt {
+  position: relative;
+  left: 90%;
+  top: -32px;
+  font-family: 'Gilroy';
+}
+
+.registration {
+  top: -64px;
+  left: 105%;
+  position: relative;
+  font-family: 'Gilroy';
+}
+
+.tags {
+  position: relative;
+  left: 125%;
+  top: -93px;
+  font-family: 'Gilroy';
+}
+
+.Kedah {
+  margin-top: 24px;
+  margin-left: 4px;
+}
+
+.mala {
+  margin-top: -111px;
+  margin-left: 4px;
+}
+
+.Perak {
+  margin-top: 18px;
+  margin-left: 4px;
+}
+
+.Penang {
+  margin-top: 17px;
+  margin-left: 4px;
+}
+
+.North {
+  margin-top: 17px;
+  margin-left: 4px;
+}
+
+.addlink {
+  margin-top: -21px;
+  margin-left: 987px;
+
+}
+
+.numberl {
+  margin-top: -21px;
+  margin-left: 799px;
+}
+
+.headergeo {
+  position: relative;
+  left: -7%;
+  top: -29px;
+}
+
+.malainput {
+  position: relative;
+  left: -7%;
+}
+
+.kedahinput {
+  position: relative;
+  left: -7%;
+}
+
+.perakinput {
+  position: relative;
+  left: -7%;
+}
+
+.penanginput {
+  position: relative;
+  left: -7%;
+}
+
+.northinput {
+  position: relative;
+  left: -7%;
+}
+
+.infosize {
+  width: 300px !important;
+}
+
+::ng-deep.mat-horizontal-content-container {
+  overflow: hidden;
+  padding: 0px 0px 0px 0px;
+}
+
+.submitbtn {
+  margin-top: 12px;
+  background-color: #000000;
+  width: 20rem;
+  position: relative;
+  left: 125%;
+}
+
+#abc::placeholder {
+   bottom: 90px;
+}
+
+::ng-deep.categorydrp .ng-select.ng-select-single .ng-select-container {
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgb(0 0 0 / 20%), -4px -4px 8px rgb(255 255 255 / 20%);
+  border-radius: 10px;
+}
+
+::ng-deep.subcategorydrp .ng-select.ng-select-single .ng-select-container {
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgb(0 0 0 / 20%), -4px -4px 8px rgb(255 255 255 / 20%);
+  border-radius: 10px;
+}
+
+::ng-deep.typedrp .ng-select.ng-select-single .ng-select-container {
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgb(0 0 0 / 20%), -4px -4px 8px rgb(255 255 255 / 20%);
+  border-radius: 10px;
+}
+
+::ng-deep.uomdrp .ng-select.ng-select-single .ng-select-container {
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgb(0 0 0 / 20%), -4px -4px 8px rgb(255 255 255 / 20%);
+  border-radius: 10px;
+}
+
+::ng-deep.customidentifier .ng-select.ng-select-single .ng-select-container {
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgb(0 0 0 / 20%), -4px -4px 8px rgb(255 255 255 / 20%);
+  border-radius: 10px;
+}
+
+::ng-deep.categorydrp .ng-placeholder {
+  color: #999;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+  /* font-weight: lighter; */
+}
+
+::ng-deep.subcategorydrp .ng-placeholder {
+  color: #999;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+}
+
+::ng-deep.typedrp .ng-placeholder {
+  color: #999;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+}
+
+::ng-deep.uomdrp .ng-placeholder {
+  color: #999;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+}
+::placeholder {
+  color: #999 !important;
+  font-size: 14px !important;
+  line-height: 16px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+/* ::ng-deep.customidentifier label {
+  color: #999 !important;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+} */
+::ng-deep.nameplaceholed .ng-placeholder {
+  color: #999;
+font-size: 14px;
+line-height: 16px;
+display: flex;
+align-items: center;
+}
+.materialname-placeholder {
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  
+  height: 35px;
+  background-color: white;
+  margin-top: 8px;
+  /* margin-left: -1px; */
+}
+::ng-deep.sss .mat-form-field-label {
+  color: rgba(104, 110, 116, 0.75);
+  font-size: 12px;
+  padding-top: 5px;
+  padding-left: 9px;
+}
+
+.addmaterial-align {
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.brand-name {
+  /* width: 344px; */
+  height: 31px;
+  background-color: white;
+  /* margin-top: 7px; */
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding-left: 8px;
+}
+
+.global-codeplaceholder {
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  /* width: 324px; */
+  height: 31px;
+  background-color: white;
+
+  padding-left: 8px;
+}
+
+.sku-placeholder {
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  
+  height: 31px;
+  background-color: white;
+  
+  padding-left: 8px;
+}
+
+.shortcode-placeholder {
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  
+  padding-left: 8px;
+  height: 31px;
+  background-color: white;
+}
+
+.sort-placeh {
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  
+  height: 31px;
+  background-color: white;
+  /* margin-top: -60px;
+  margin-left: 393px; */
+  padding-left: 8px;
+}
+
+.link-placeh {
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  
+  height: 31px;
+  background-color: white;
+  
+  padding-left: 8px;
+}
+
+::ng-deep.productg-align .ng-select-container {
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.geo-align {
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.leftarrow {
+  width: 24px;
+  margin-left: 728px;
+}
+
+.rightarrow {
+  width: 24px;
+  margin-left: 12px;
+}
+
+.stepperHeader-b {
+  color: #000000;
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: 'Gilroy';
+}
+
+.materialDesc {
+  border: 1px solid !important;
+  border-radius: 10px;
+  /* width: 300px;
+  height: 126px; */
+  width: 415px;
+height: 130px;
+  background-color: white;
+  margin-top: 6px;
+  margin-left: 3px;
+}
+textarea {
+  resize: none;
+}
+
+
+.imagePl {
+  border: 1px solid !important;
+  border-radius: 8px;
+  height: 130px;
+  width: 126px;
+  background-color: white;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 53%;
+}
+
+.na-placeholder {
+  border: 1px solid !important;
+  border-radius: 10px;
+
+  height: 32px;
+  background-color: white;
+  padding: 0 5px;
+  -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+
+}
+.stepperHeader-p {
+  color: #000000;
+  font-size: 20px;
+  font-weight: lighter;
+  font-family: 'Gilroy';
+}
+
+.imagePlus {
+  width: 22px;
+}
+
+.matcardscroll {
+  height: 188px;
+  overflow-y: scroll;
+}
+
+.mrpP {
+  width: 83px;
+  height: 30px;
+  background-color: white;
+  margin-top: -22px;
+  margin-left: 216px;
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.min-qP {
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  width: 83px;
+  height: 30px;
+  background-color: white;
+  margin-top: -33px;
+  margin-left: 314px;
+}
+
+.maxP {
+  width: 83px;
+  height: 30px;
+  background-color: white;
+  margin-top: -33px;
+  margin-left: 413px;
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.marginP {
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  width: 83px;
+  height: 30px;
+  background-color: white;
+  margin-top: -33px;
+  margin-left: 508px;
+}
+
+.discountP {
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  width: 83px;
+  height: 30px;
+  background-color: white;
+  margin-top: -33px;
+  margin-left: 611px;
+}
+
+.leadtimeP {
+  width: 83px;
+  height: 30px;
+  background-color: white;
+  margin-top: -33px;
+  margin-left: 709px;
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+.regP {
+  border: 0.5px solid #000000;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  width: 141px;
+  height: 30px;
+  background-color: white;
+  margin-top: -33px;
+  margin-left: 828px;
+}
+::ng-deep.arrowHide .ng-arrow-wrapper {
+  width: 25px;
+  padding-right: 5px;
+  display: none;
+}
+.selctn-box{
+  background: #FFFFFF;
+border: 0.5px solid #000000;
+box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+border-radius: 10px;
+width: 343px;
+height: 43px;
+}
+::ng-deep.select-fldd .mat-form-field-type-mat-select:not(.mat-form-field-disabled) .mat-form-field-flex{
+  width: 157px;
+  height: 30px;
+  background: #FFFFFF;
+  border: 0.5px solid #000000;
+  border-radius: 7px 7px 0px 0px;
+  }
+  ::ng-deep.select-fldd .mat-form-field-appearance-fill .mat-form-field-flex {
+    padding: 2px;
+  }
+  .applybtn{
+    background: #000000;
+    box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.2), inset 2px 2px 4px rgba(255, 255, 255, 0.15);
+    border-radius: 7px;
+    width: 69.34px;
+height: 30px;
+color: white;
+  }
+.enterValu{
+  background: #FFFFFF;
+  border: 0.5px solid #000000;
+  border-radius: 7px;
+  width: 89px;
+height: 30px;
+  }
+  .countryinput{
+    width: 83px;
+height: 34px;
+border: 0.5px solid #000000;
+box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+border-radius: 10px;
+margin-right: 10px;
+  }
+  .regNuminput{
+    width: 173px;
+height: 34px;
+border: 0.5px solid #000000;
+box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.2);
+border-radius: 10px;
+margin-right: 10px;
+  }
+  .expand-arrow {
+    height: 20px;
+    margin-right: 10px;
+  }
+  .addedNum{
+    background: #000000;
+box-shadow: -4px -4px 8px rgba(255, 255, 255, 0.2), 4px 4px 8px rgba(0, 0, 0, 0.2), inset -2px -2px 4px rgba(0, 0, 0, 0.2), inset 2px 2px 4px rgba(255, 255, 255, 0.15);
+border-radius: 18.5px;
+width: 34px;
+height: 34px;
+color: white;
+padding: 5px;
+  }
+  .geolabelHead{
+    width: 83px;
+    font-weight: 500;
+    margin-right: 10px;
+  }
+  .geoRegnum{
+width: 173px;
+margin-right: 10px;
+font-weight: 500;
+font-size: 12.5px;
+  }
+  .addFeild{
+    color: blue;
+    text-decoration: underline;
+  }
+  .geotagHead{
+    font-weight: 500;
+font-size: 12.5px;
+  }
+
+  /* geograhies css */
+
+  .geography-item {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  .cdk-overlay-pane{
+    max-width: 75vw !important;
+    position: static;
+  }
+  .geography-item.deactivated {
+    color: #a6a7ad !important;
+    opacity: .6;
+    border: 1px solid #a6a7ad !important;
+    cursor: auto;
+  }
+  .Geo-headerlabel {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    color: #000000;
+  }
+
+  .horizontal-scroll {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+
+  }
+  .vertical-scroll {
+    display: flex;
+    gap: 10px;
+    height: 450px;
+    overflow-y: auto;
+
+  }
+  .horizontal-scroll__item {
+    flex: 0 0 249px;
+    scroll-snap-align: start;
+  }
+
+  .grid-heading {
+    padding: 0 20px;
+  }
+.country {
+
+  font-family: 'Gilroy';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23.06px;
+  letter-spacing: 0em;
+  color: #000000;
+  font-style: light;
+}
+
+.State {
+  font-family: 'Gilroy';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23.06px;
+  font-style: light;
+  letter-spacing: 0em;
+  color: #000000;
+
+}
+
+.District {
+  font-family: 'Gilroy';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23.06px;
+  font-style: light;
+  letter-spacing: 0em;
+  color: #000000;
+
+}
+
+.City {
+  font-family: 'Gilroy';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23.06px;
+  font-style: light;
+  letter-spacing: 0em;
+  color: #000000;
+}
+
+.Regions {
+  font-family: 'Gilroy';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23.06px;
+  font-style: light;
+  letter-spacing: 0em;
+  color: #000000;
+}
+
+.Area {
+  font-family: 'Gilroy';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23.06px;
+  font-style: light;
+  letter-spacing: 0em;
+  color: #000000;
+}
+
+.Sub Area {
+  font-family: 'Gilroy';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 23.06px;
+  font-style: light;
+  letter-spacing: 0em;
+  color: #000000;
+}
+.selected {
+  background-color: #00187A;
+  color: white;
+}
+
+.subselected {
+  background: #0C5A3E;
+  color: white;
+}
+
+.typeselected {
+  background: #C32F27;
+  color: white;
+}
+
+.cityselected {
+  background: #C32F27;
+  color: white;
+}
+
+.regionselected {
+  background: #3D1A00;
+  color: white;
+}
+
+.areaselected {
+  background: #3D1A00;
+  color: white;
+}
+.geo-classification-crad .mat-card {
+  height: 380px !important;
+}
+
+.scroll {
+  overflow-y: auto;
+  overflow-x: auto;
+}
+.expand-arrow1 {
+  width: 8%;
+  height: 9px;
+  right: 26px;
+  top: 4px;
+}
+.uom-cls {
+  border: 0.5px solid #000000;
+  border-radius: 7px;
+  width: 70px
+}
+.table-data-row{
+  margin-left: 30px;
+  padding-bottom: 2px;
+}
+.table-padding{
+  padding-bottom: 4px;
+}
+.table-header th{
+  width: 13%;
+  padding-left: 27px;
+}
+.table-data-row td{
+  width: 13%;
+  /* padding-left: 27px; */
+}
+.check{
+  text-align: -webkit-center;
+}
+.check2{
+  text-align: end;
+}
+.propertiesSection{
+  overflow-y:auto;padding-top: 10px;height: 240px;
+}
+::ng-deep.Materialcustomidentifier .multiselect-dropdown .dropdown-btn .selected-item{
+  border: 1px solid #337ab7;
+  margin-right: 4px;
+  background: #00187A !important;
+  padding: 0 5px;
+  color: #fff;
+  border-radius: 10px !important;
+  float: left;
+  display: flex;
+  max-width: 170px !important;
+  position: relative;
+  top: 0px !important;
+}

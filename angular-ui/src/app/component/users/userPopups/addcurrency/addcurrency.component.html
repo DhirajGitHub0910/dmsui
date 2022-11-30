@@ -1,0 +1,101 @@
+
+  <div class="font ">
+    <div class=" main" width="400%">
+    <div class="container" >
+          <div class="addUser">
+            <mat-icon  mat-button class="close-icon" [mat-dialog-close]="true">close</mat-icon>        <div class="head-t">
+          <h3 class="addU font">{{headerName}}</h3>
+        </div>
+        <div>
+          <br>
+          <h6 style="color: #000000
+   ;font-size:20px; font-weight: lighter;"><b> Information</b></h6>
+   <!-- <p style="color: red;">{{errorMsg}}</p> -->
+       <label class="defaultCurrLabel">Default Currency =<b> Indian Rupee (INR)</b><span>*</span></label>
+ 
+        </div>
+        
+        <div class="addUserForm divAlign">
+          <!-- <form> -->
+            <div class="row">
+              <div class="col">
+                  <label>Name <span>*</span></label>
+                  <br>
+                  <input type="text" required  (keyup)="onKeyName($event)" placeholder="Enter Name"[(ngModel)]="EUomName" class="imputtext">
+                </div>
+                <div class="col">
+                  <label>Display Units<span>*</span></label>
+                  <br>
+                <input type="text" (keyup)="onKeyShortName($event)" required placeholder="Enter display unit" [(ngModel)]="EuoMShortName" class="imputtext" ></div>
+            </div>
+                <br>
+              <div class="row">
+                <div class="col">
+                  <label>Conversion Rate<span>*</span></label>
+                  <br>
+                  <input required (keyup)="onKeyConversion($event)" [(ngModel)]="EConversionRate" placeholder="Enter Conversion Rate" class="imputtext" style="width: 100%;">
+                
+                </div>
+                <!-- <div class="col"> 
+                 
+                  <label>Default Currency<span>*</span></label>
+                  <br>
+                  <input type="text" placeholder="Enter Default Currency" >
+                </div> -->
+              </div>       
+              <br>
+            <div class="row">
+                <div class="col">
+                
+              <label>Conversion<span>*</span></label>
+              <br>
+              <input type="text" [value]="editedConversion" placeholder="0.011 GBP" [(ngModel)]="EConversionShow" class="imputtext" disabled>
+                
+                </div>
+                <div class="col"> 
+                 
+                  <label><span style="color: aliceblue;">.</span></label>
+                  <br>
+<h2 style="padding-top: 11px;">=</h2>                     
+                    </div>
+                <div class="col">
+                
+                  <label><span style="color: aliceblue;">.</span></label>
+                  <br>
+                  <div>
+                  <input type="text"  placeholder="1 INR" disabled [(ngModel)]="EuomSymbol"  class="imputtext">
+                  </div>
+                    </div>
+
+                   
+               
+              </div>    
+              <br>
+              <!-- </form> -->
+              <div class="row">
+                <div class="col">
+                  <button class="btn btn-primary btn-block" *ngIf="editButton" [disabled]="(!EUomName || !EuoMShortName || !EConversionRate || !EConversionShow || !EuomSymbol)" style="background-color: black; border-radius: 10px;" (click)="addcurncy()">Save</button>
+                  <button class="btn btn-primary btn-block" *ngIf="!editButton" [disabled]="(!Name || !uomShortName || !conversionRates || !UOMSymbol || !conversion)" style="background-color: black; border-radius: 10px;" (click)="addcurncy()">Save</button>
+                </div>
+                  <div class="col">
+                    <button class="btn btn-primary btn-block" (click)="closeDialog()" style="background-color: white;color: black; border: 2px solid black; border-radius: 10px;">Cancel</button>
+ 
+                  </div>
+              </div>
+          <span style="position: relative;top: -3px;">Required fields*</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+

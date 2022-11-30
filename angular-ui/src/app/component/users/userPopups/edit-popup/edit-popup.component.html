@@ -1,0 +1,136 @@
+
+  <div class="font ">
+    <div class=" main" width="400%">
+    <div class="container" >
+          <div class="addUser">
+                <mat-icon mat-button class="close-icon" [mat-dialog-close]="true">close</mat-icon>
+        <div class="head-t">
+          <h3 class="addU font">Edit User</h3>
+        </div>
+        <div>
+          <br>
+          <h6 style="color: #000000
+   ;font-size:20px; font-weight: lighter;"><b>Basic Information</b></h6>
+     <!-- <p style="color: red;">{{errorMsg}}*</p> -->
+        </div>
+        <div class="addUserForm">
+          <form #editForm="ngForm">
+            <div class="row">
+    <div class="col">
+      <label>Username<span>*</span></label>
+      <br>
+      <input id="euname" name="euname" required type="text" placeholder="Enter your username" [(ngModel)]="username" style="width: 530px;" #euname="ngModel">
+      <p style="margin-bottom:-22px;padding: 0px;" *ngIf="euname.invalid && (euname.dirty || euname.touched)"
+      class="alert">
+  
+    <span style="color:red;position: relative;" *ngIf="euname.errors?.['required']">
+      *Username is required.
+    </span>
+  </p>
+    </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col">
+                <label>First Name<span>*</span></label>
+                <br>
+                <input id="efname" name="efname" required type="text" placeholder="Enter your first name" [(ngModel)]="fullname"#efname="ngModel">
+                <p style="margin-bottom:-22px;padding: 0px;" *ngIf="efname.invalid && (efname.dirty || efname.touched)"
+                class="alert">
+            
+              <span style="color:red;position: relative;" *ngIf="efname.errors?.['required']">
+                *First Name is required.
+              </span>
+            </p>
+              </div>
+              <div class="col">
+                <label>Last Name<span>*</span></label>
+                <br>
+                <input id="elname" name="elname" required type="text" placeholder="Enter your last name" [(ngModel)]="Lastname"#elname="ngModel">
+                <p style="margin-bottom:-22px;padding: 0px;" *ngIf="elname.invalid && (elname.dirty || elname.touched)"
+                class="alert">
+            
+              <span style="color:red;position: relative;" *ngIf="elname.errors?.['required']">
+                *Last Name is required.
+              </span>
+            </p>
+              </div>
+            </div>
+            <br>
+            <div class="row">
+              <div class="col">
+                <label>Email ID<span>*</span></label>
+                <br>
+                <input type="email" id="emails" name="emails" required pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$" #emails="ngModel" placeholder="Enter your email Id" [(ngModel)]="email">
+                <p style="margin-bottom:-22px;padding: 0px;" *ngIf="emails.invalid && (emails.dirty || emails.touched)"
+                class="alert">
+            
+              <span style="color:red;position: relative;" *ngIf="emails.errors?.['required']">
+                *Email is required.
+              </span>
+              <span style="color:red;position: relative;" *ngIf="emails.errors&&emails.errors?.['pattern']">
+                *Email is Invalid.
+              </span>
+            </p>
+              </div>
+              <div class="col">
+
+                <label>Phone No<span>*</span></label>
+                <br>
+                <input type="text" id="mobileno" name="mobileno" required placeholder="Enter your phone number" pattern="^((\\+91-?)|0)?[0-9]{10}$" placeholder="Enter your phone no." [(ngModel)]="phone" #mobileno="ngModel">
+                <p style="margin-bottom:-22px;padding: 0px;" *ngIf="mobileno.invalid && (mobileno.dirty || mobileno.touched)"
+                class="alert">
+              <span style="color:red;position: relative;" *ngIf="mobileno.errors?.['required']">
+                *Phone Number is required.
+              </span>
+              <span style="color:red;position: relative;" *ngIf="mobileno.errors&&mobileno.errors?.['pattern']">
+                *Phone Number is Invalid.
+              </span>
+            </p>
+              </div>
+            </div>
+            <br>
+            <br>
+            <h6 style="color: #000000
+   ;font-size:20px; font-weight: lighter;"><b>Role Selection</b></h6>
+            <div class="row">
+              <div class="col">
+                  <label>Role<span>*</span></label>
+                <br>
+                <select  #teams class="form-select form-select-lg mb-8"    (change)="selectedValue(teams.value);" placeholder="Select your Role" aria-label=".form-select-lg example" style="height: 35px;border-radius: 6px;width: 100%;">
+                  <option value="" disabled selected hidden>{{role123}}</option>
+
+                  <option style="height: 900px;"  *ngFor="let topping of toppingList" [value]="topping.roleId">{{topping.roleName}}</option>
+
+                </select>
+
+                         <!-- <mat-form-field appearance="outline" style="width: 525px;">
+                <mat-select  [(ngModel)]="role123" placeholder="Select your Role " (selectionChange)="selectedValue($event.value);" [disableRipple]="true">
+
+                  <mat-option *ngFor="let topping of toppingList" [value]="topping.roleId">
+                    {{topping.roleName}}</mat-option>
+                </mat-select>
+              </mat-form-field> -->
+            </div>
+            </div>
+</form>
+<br>
+            
+            <!-- <mat-form-field>
+          <mat-label>Role</mat-label>
+          <mat-select [formControl]="role">
+            <mat-option *ngFor="let user of userType" [value]="role">{{user}}</mat-option>
+          </mat-select>
+        </mat-form-field> -->
+
+          <button [disabled]="editForm.form.invalid" class="btn btn-primary edituser" (click)="editUser()">Save</button>
+          <button class="btn btn-primary cancl" (click)="closeDialog()"> Cancel</button>
+          <div>
+           <span style="position: relative;">Required fields*</span>
+          </div>
+          <!-- <label style="margin-left:1%;color: red;">Required Fields</label><span>*</span> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

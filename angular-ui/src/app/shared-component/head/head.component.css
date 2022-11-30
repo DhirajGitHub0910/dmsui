@@ -1,0 +1,37 @@
+
+
+.mat-toolbar-example{
+
+  position: fixed;
+
+  z-index: 1000;
+
+  width: 100%;
+
+}
+
+
+
+.header-nav{
+
+  padding-bottom: 46px;
+
+}
+
+.example-spacer {
+  flex: 0.978 1 auto;
+}
+  ::ng-deep.mat-toolbar-single-row{
+background-color: white;
+  }
+  .togglemweb{
+  display: none;
+  }
+  @media (max-width:767px){
+    .togglemweb{
+      display: block;
+      border-radius: 10px;
+      /* font-size: 20px; */
+      background-image: linear-gradient(90.06deg, #CED4DA 0.05%, #F8F9FA 96.47%) !important;
+      }
+  }

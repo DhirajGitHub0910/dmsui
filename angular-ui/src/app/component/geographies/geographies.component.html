@@ -1,0 +1,32 @@
+<app-head (ToggleSideNav)="ToggleSideNav($event)"></app-head>
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+        <app-sidenav-bar></app-sidenav-bar>
+    </mat-sidenav>
+    
+
+    <mat-sidenav-content>
+        <!--<div class="dash-content" > -->
+                <h2 class="header-text">Geographies</h2>
+                <img  class="print-img" src="../../../assets/material/print-img.svg" alt="">
+         
+                    <div class="UNFAPP-asmnt-rgt-area main geo-classification-list">
+                        <!-- <div class="col-lg-12"> -->
+                            <mat-tab-group class="geo-label">
+                                <mat-tab label="Classification">
+                                    <app-geo-classification></app-geo-classification>
+                                </mat-tab>
+                                <mat-tab label="Settings">
+                                    <app-geographic-list></app-geographic-list>
+                                </mat-tab>
+                            </mat-tab-group>
+                           
+                        <!-- </div> -->
+                    </div>
+                    
+        <!--</div> -->
+    </mat-sidenav-content>
+    
+</mat-sidenav-container>
+

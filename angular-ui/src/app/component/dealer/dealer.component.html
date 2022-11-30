@@ -1,0 +1,45 @@
+<app-head (ToggleSideNav)="ToggleSideNav($event)"></app-head>
+
+<mat-sidenav-container>
+    <mat-sidenav #sidenav="matSidenav" class="mat-elevation-z8">
+        <app-sidenav-bar></app-sidenav-bar>
+    </mat-sidenav>
+    
+
+    <mat-sidenav-content>
+        <!--<div class="dash-content" > -->
+                <h2 class="header-text">Dealers</h2>
+                <img  class="print-img" src="../../../assets/material/print-img.svg" alt="">
+         
+                    <div class="UNFAPP-asmnt-rgt-area main dealertab">
+                        <!-- <div class="col-lg-12"> -->
+                            <mat-tab-group class="geo-label">
+                                <mat-tab label="Dealers ">
+                                    <app-dealers></app-dealers>
+                                </mat-tab>
+                                <mat-tab label="Association">
+                                    <app-association></app-association>
+                                </mat-tab>
+                                <mat-tab label="Promotions">
+                                    <app-promotions></app-promotions>
+                                 </mat-tab>
+                                 <mat-tab label="Targets">
+                                   <app-dealer-target>
+                                   </app-dealer-target>
+                                </mat-tab>
+                                <mat-tab label="Reports">
+                                    <app-reports></app-reports>
+                                </mat-tab>
+                                   
+                                
+                            </mat-tab-group>
+                           
+                        <!-- </div> -->
+                    </div>
+                    
+        <!--</div> -->
+    </mat-sidenav-content>
+    
+</mat-sidenav-container>
+
+
