@@ -3,6 +3,7 @@ os: windows
 files:
   - source: \
     destination: C:\Users\Administrator\Downloads\
+file_exists_behavior: OVERWRITE
 hooks: 
  BeforeInstall: 
  - location: \before-install.bat 
