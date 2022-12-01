@@ -2,7 +2,7 @@ version: 0.0
 os: windows
 files:
   - source: \
-    destination: C:\inetpub\wwwroot
+    destination: C:\Users\Administrator\Downloads\
 hooks: 
  BeforeInstall: 
  - location: \before-install.bat 
