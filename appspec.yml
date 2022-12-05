@@ -2,7 +2,7 @@ version: 0.0
 os: windows
 files:
   - source: \
-    destination: C:\Users\Administrator\Downloads\
+    destination:  c:\inetpub\wwwroot
 file_exists_behavior: OVERWRITE
 hooks: 
  BeforeInstall: 
